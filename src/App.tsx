@@ -6,6 +6,7 @@ import wizard from './assets/wizard.png'
 import wizardFalling from './assets/wizard_falling.png';
 import wizardDown from './assets/wizard_down.png';
 import wizardPointing from './assets/wizard_pointing.png';
+import wizardWatch from './assets/wizard_watch.png';
 
 function App() {
   return (
@@ -65,7 +66,7 @@ function App() {
           <ParallaxLayer speed={0.1} offset={6}>
               <div className="step-falling">
                   <div>
-                      <h2>a aké sú druhy investovania.</h2>
+                      <h2>a kedy začať investovať.</h2>
                   </div>
               </div>
           </ParallaxLayer>
@@ -97,26 +98,19 @@ function App() {
               </div>
           </ParallaxLayer>
 
-
-          {/*<ParallaxLayer offset={6.5}>*/}
-          {/*    <div className="step">*/}
-          {/*        <img src={linechartBot} alt={'chartBot'}/>*/}
-          {/*    </div>*/}
-          {/*</ParallaxLayer>*/}
-
-          {/*<ParallaxLayer offset={1} speed={1} style={{*/}
-          {/*    backgroundImage: `url(${img1})`,*/}
-          {/*    backgroundSize: 'cover',*/}
-          {/*    backgroundPosition: 'center',*/}
-          {/*    backgroundRepeat: 'no-repeat',*/}
-          {/*    // Example responsive styling (for illustrative purposes)*/}
-          {/*    display: 'flex',*/}
-          {/*    flexDirection: 'column',*/}
-          {/*    alignItems: 'center',*/}
-          {/*    justifyContent: 'center',*/}
-          {/*}}>*/}
-          {/*</ParallaxLayer>*/}
-
+          <ParallaxLayer
+              speed={0.1}
+              offset={8.5}>
+              <div className="step">
+                  <div>
+                      <h2>Kedy začať investovať?</h2>
+                      <p className="left-align">
+                          Hneď. Už včera bolo neskoro. Čím skôr, tým lepšie. Nechaj svoje peniaze pracovať.
+                      </p>
+                  </div>
+                  <img src={wizardWatch} alt={'wizzard watch'}/>
+              </div>
+          </ParallaxLayer>
       </Parallax>
     </>
   )
