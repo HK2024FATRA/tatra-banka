@@ -11,7 +11,7 @@ import wizardWatch from './assets/wizard_watch.png';
 function App() {
   return (
     <>
-      <Parallax pages={100} style={{top: '0', left: '0'}} className="animation">
+      <Parallax pages={20} style={{top: '0', left: '0'}} className="animation">
 
           <ParallaxLayer
               offset={0}
