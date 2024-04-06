@@ -4,11 +4,12 @@ import { Header } from './header/Header.tsx';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import wizard from './assets/wizard.png'
 import wizardFalling from './assets/wizard_falling.png';
+import wizardDown from './assets/wizard_down.png';
 
 function App() {
   return (
     <>
-      <Parallax pages={10} style={{top: '0', left: '0'}} className="animation">
+      <Parallax pages={100} style={{top: '0', left: '0'}} className="animation">
 
           <ParallaxLayer
               offset={0}
@@ -27,13 +28,13 @@ function App() {
               speed={0.1}
               offset={1}>
               <div className="step">
-                  <img src={wizard} alt={'wizzard'}/>
                   <h2>Ahoj! Volám sa FatraBot a budem tvojím pomocníkom na ceste investovania.</h2>
+                  <img src={wizard} alt={'wizzard'}/>
               </div>
           </ParallaxLayer>
 
 
-          <ParallaxLayer offset={1.5} speed={0} sticky={{start: 2, end: 5.5}}>
+          <ParallaxLayer offset={2} speed={0} sticky={{start: 2, end: 5.5}}>
               <div style={{height: '100vh', display: 'flex', alignItems: 'flex-start'}}>
                   <img src={wizardFalling} alt="Falling Wizard" style={{maxWidth: '100%', maxHeight: '100%', objectFit: 'contain'}}/>
               </div>
@@ -49,25 +50,44 @@ function App() {
           <ParallaxLayer speed={0.1} offset={4}>
               <div className="step-falling">
                   <div>
-                      <h2>Ako ti investovanie dokáže zhodnotiť úspory, ktoré ti ležia na účte,</h2>
+                      <h2>prečo investovať,</h2>
                   </div>
               </div>
           </ParallaxLayer>
           <ParallaxLayer speed={0.1} offset={5}>
               <div className="step-falling">
                   <div>
-                      <h2>vybudovať majetok a finančnú rezervu,</h2>
+                      <h2>ako investovať,</h2>
                   </div>
               </div>
           </ParallaxLayer>
           <ParallaxLayer speed={0.1} offset={6}>
               <div className="step-falling">
                   <div>
-                      <h2>a zabezpečiť tak tvoju finančnú stabilitu alebo slobodu.</h2>
+                      <h2>a aké sú druhy investovania.</h2>
                   </div>
               </div>
           </ParallaxLayer>
 
+          <ParallaxLayer
+              speed={0.1}
+              offset={7}>
+              <div className="step">
+                  <div>
+                      <h2>Prečo investovať?</h2>
+                      <p>Peniaze na účte ti každý rok strácajú hodnotu kvôli inflácii. Trhy dlhodobo rastú a prinášajú
+                          zisk. Nechaj svoje peniaze pracovať na tebe a využi potenciál investovania.</p>
+                  </div>
+                  <img src={wizardDown} alt={'wizzard'}/>
+              </div>
+          </ParallaxLayer>
+
+
+          {/*<ParallaxLayer offset={6.5}>*/}
+          {/*    <div className="step">*/}
+          {/*        <img src={linechartBot} alt={'chartBot'}/>*/}
+          {/*    </div>*/}
+          {/*</ParallaxLayer>*/}
 
           {/*<ParallaxLayer offset={1} speed={1} style={{*/}
           {/*    backgroundImage: `url(${img1})`,*/}

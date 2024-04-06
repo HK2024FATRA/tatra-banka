@@ -9,7 +9,7 @@ export const Header = () => {
         padding: '10px 20px', // padding
         display: 'flex', // use flex for layout
         alignItems: 'center', // vertical alignment
-        justifyContent: 'space-between' // space between the items
+        justifyContent: 'space-between', // space between the items
     };
 
 
