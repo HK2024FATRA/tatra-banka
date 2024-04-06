@@ -4,9 +4,16 @@ import App from './App.tsx'
 import './index.css'
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import {Login} from './login/Login.tsx';
+import { Auth0Provider } from '@auth0/auth0-react';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
+    <Auth0Provider
+    domain="dev-b4fj8fgymor35h67.eu.auth0.com"
+    clientId="b63VRmxvTmFLOGxCmznOtImm74AXxCxf"
+    authorizationParams={{
+      redirect_uri: window.location.origin
+    }}>
+    <React.StrictMode>
       <BrowserRouter>
           <Routes>
               <Route path="/" element={<App />}>
@@ -15,5 +22,6 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
               </Route>
           </Routes>
       </BrowserRouter>
-  </React.StrictMode>,
+  </React.StrictMode>
+  </Auth0Provider>
 )
