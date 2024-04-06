@@ -81,3 +81,12 @@ h2 {
         width: 100%;
     }
 }
+
+.right-align {
+    margin: 15px;
+    text-align: right;
+}
+.left-align {
+    margin: 15px;
+    text-align: left;
+}

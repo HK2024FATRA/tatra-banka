@@ -90,9 +90,9 @@ function App() {
                   <img src={wizardPointing} alt={'wizzard'}/>
                   <div>
                       <h2>Ako investovať?</h2>
-                      <p>Peniaze na účte ti každý rok strácajú hodnotu kvôli inflácii. Trhy
-                          dlhodobo rastú a prinášajú
-                          zisk. Nechaj svoje peniaze pracovať na tebe a využi potenciál investovania.</p>
+                      <p className="left-align">
+                          Pre <b>krátkodobé investičné horizonty</b> (do 5 rokov) je vhodné pristupovať <b>konzervatívnejšie</b>, čo <b>znižuje riziko straty, ale aj potenciálne výnosy</b>. <br/> <br/>
+                          Naopak, pri <b>dlhodobom investovaní</b> je možné zvoliť <b>agresívnejšie stratégie</b>, ktoré prinášajú <b>vyšší potenciál</b> rastu hodnoty investície, aj keď musíš počítať s <b>možnými kratkodobými výkyvmi</b>.</p>
                   </div>
               </div>
           </ParallaxLayer>
