@@ -32,8 +32,9 @@ function App() {
               </div>
           </ParallaxLayer>
 
-          <ParallaxLayer speed={1} offset={1}>
-
+          <ParallaxLayer
+              speed={1}
+              offset={1}>
           </ParallaxLayer>
 
 
