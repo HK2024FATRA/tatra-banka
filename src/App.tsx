@@ -33,7 +33,7 @@ function App() {
           </ParallaxLayer>
 
 
-          <ParallaxLayer offset={1.5} speed={0} sticky={{start: 2, end: 6}}>
+          <ParallaxLayer offset={1.5} speed={0} sticky={{start: 2, end: 5.5}}>
               <div style={{height: '100vh', display: 'flex', alignItems: 'flex-start'}}>
                   <img src={wizardFalling} alt="Falling Wizard" style={{maxWidth: '100%', maxHeight: '100%', objectFit: 'contain'}}/>
               </div>
@@ -49,7 +49,7 @@ function App() {
           <ParallaxLayer speed={0.1} offset={4}>
               <div className="step-falling">
                   <div>
-                      <h2>Ako ti investovanie dokáže zhodnotiť úspory, ktoré ti ležia na účte 📈,</h2>
+                      <h2>Ako ti investovanie dokáže zhodnotiť úspory, ktoré ti ležia na účte,</h2>
                   </div>
               </div>
           </ParallaxLayer>
