@@ -52,21 +52,21 @@ function App() {
           <ParallaxLayer speed={0.1} offset={4}>
               <div className="step-falling">
                   <div>
-                      <h2>prečo investovať,</h2>
+                      <h2><a href="#why" className="link-h">prečo</a> investovať,</h2>
                   </div>
               </div>
           </ParallaxLayer>
           <ParallaxLayer speed={0.1} offset={5}>
               <div className="step-falling">
                   <div>
-                      <h2>ako investovať,</h2>
+                      <h2><a href="#how" className="link-h">ako</a> investovať,</h2>
                   </div>
               </div>
           </ParallaxLayer>
           <ParallaxLayer speed={0.1} offset={6}>
               <div className="step-falling">
                   <div>
-                      <h2>a kedy začať investovať.</h2>
+                      <h2>a <a href="#when" className="link-h">kedy</a> začať investovať.</h2>
                   </div>
               </div>
           </ParallaxLayer>
@@ -74,7 +74,7 @@ function App() {
           <ParallaxLayer
               speed={0.1}
               offset={6.5}>
-              <div className="step">
+              <div className="step" id="why">
                   <div>
                       <h2>Prečo investovať?</h2>
                       <p>Peniaze na účte ti každý rok strácajú hodnotu kvôli inflácii. Trhy dlhodobo rastú a prinášajú
@@ -87,7 +87,7 @@ function App() {
           <ParallaxLayer
               speed={0.1}
               offset={7.5}>
-              <div className="step">
+              <div className="step" id="how">
                   <img src={wizardPointing} alt={'wizzard'}/>
                   <div>
                       <h2>Ako investovať?</h2>
@@ -101,7 +101,7 @@ function App() {
           <ParallaxLayer
               speed={0.1}
               offset={8.5}>
-              <div className="step">
+              <div className="step" id="when">
                   <div>
                       <h2>Kedy začať investovať?</h2>
                       <p className="left-align">

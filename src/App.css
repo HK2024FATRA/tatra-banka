@@ -47,6 +47,30 @@ h2 {
     -0.04em -0.04em 0 #000;
 }
 
+.link-p {
+    text-decoration: none;
+    color: #0080ec;
+    font-family: cubano, sans-serif;
+    font-size: 2vw;
+    text-shadow: -0.04em 0.04em 0 #000,
+    0.04em 0.04em 0 #000,
+    0.04em -0.04em 0 #000,
+    -0.04em -0.04em 0 #000;
+}
+
+.link-h {
+    text-decoration: none;
+    color: #0080ec;
+    text-align: center;
+    font-family: cubano, sans-serif;
+    font-weight: 400;
+    font-size: 5vw;
+    text-shadow: -0.04em 0.04em 0 #000,
+    0.04em 0.04em 0 #000,
+    0.04em -0.04em 0 #000,
+    -0.04em -0.04em 0 #000;
+}
+
 /* Media query for smaller screens (e.g., tablets and mobile phones) */
 @media (max-width: 768px) {
     h2 {
@@ -69,6 +93,28 @@ h2 {
 
     .step p {
         color: #b3b3b3;
+        font-family: cubano, sans-serif;
+        font-size: 5vw;
+        text-shadow: -0.04em 0.04em 0 #000,
+        0.04em 0.04em 0 #000,
+        0.04em -0.04em 0 #000,
+        -0.04em -0.04em 0 #000;
+    }
+
+    .link-h {
+        color: #0080ec;
+        text-align: center;
+        font-family: cubano, sans-serif;
+        font-weight: 400;
+        font-size: 8vw;
+        text-shadow: -0.04em 0.04em 0 #000,
+        0.04em 0.04em 0 #000,
+        0.04em -0.04em 0 #000,
+        -0.04em -0.04em 0 #000;
+    }
+
+    .link-p {
+        color: #0080ec;
         font-family: cubano, sans-serif;
         font-size: 5vw;
         text-shadow: -0.04em 0.04em 0 #000,
