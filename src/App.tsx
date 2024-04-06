@@ -1,14 +1,24 @@
 import './App.css'
 
-import { Header } from './header/Header.tsx';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import wizard from './assets/wizard.png'
 import wizardFalling from './assets/wizard_falling.png';
 import wizardDown from './assets/wizard_down.png';
 import wizardPointing from './assets/wizard_pointing.png';
 import wizardWatch from './assets/wizard_watch.png';
+import logo from './assets/tb-logo.png';
+import React from 'react';
 
 function App() {
+    const headerStyle = {
+        backgroundColor: '#000', // black background
+        color: '#fff', // white text
+        padding: '10px 20px', // padding
+        display: 'flex', // use flex for layout
+        alignItems: 'center', // vertical alignment
+        justifyContent: 'space-between', // space between the items
+    };
+
   return (
     <>
       <Parallax pages={20} style={{top: '0', left: '0'}} className="animation">
@@ -17,7 +27,13 @@ function App() {
               offset={0}
               speed={0.1}
               factor={0.5}>
-              <Header></Header>
+              <div style={headerStyle}>
+                  <div>
+                      <img src={logo} alt="Logo" style={{height: '100px'}}/>
+                  </div>
+                  <div>
+                  </div>
+              </div>
           </ParallaxLayer>
 
           <ParallaxLayer
@@ -30,7 +46,7 @@ function App() {
               speed={0.1}
               offset={1}>
               <div className="step">
-                  <h2>Ahoj! Volám sa FatraBot a budem tvojím pomocníkom na ceste investovania.</h2>
+              <h2>Ahoj! Volám sa FatraBot a budem tvojím pomocníkom na ceste investovania.</h2>
                   <img src={wizard} alt={'wizzard'}/>
               </div>
           </ParallaxLayer>
