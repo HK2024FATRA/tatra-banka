@@ -37,12 +37,44 @@ h2 {
 .step-falling div {
     width: 70%;
 }
-
+.step p {
+    color: #b3b3b3;
+    font-family: cubano, sans-serif;
+    font-size: 2vw;
+    text-shadow: -0.04em 0.04em 0 #000,
+    0.04em 0.04em 0 #000,
+    0.04em -0.04em 0 #000,
+    -0.04em -0.04em 0 #000;
+}
 
 /* Media query for smaller screens (e.g., tablets and mobile phones) */
 @media (max-width: 768px) {
+    h2 {
+        text-align: center;
+        font-family: cubano, sans-serif;
+        font-weight: 400;
+        font-size: 8vw;
+        text-shadow: -0.04em 0.04em 0 #000,
+        0.04em 0.04em 0 #000,
+        0.04em -0.04em 0 #000,
+        -0.04em -0.04em 0 #000;
+    }
+
+
+
     .step {
         flex-direction: column; /* Stack flex items vertically */
+    }
+
+
+    .step p {
+        color: #b3b3b3;
+        font-family: cubano, sans-serif;
+        font-size: 5vw;
+        text-shadow: -0.04em 0.04em 0 #000,
+        0.04em 0.04em 0 #000,
+        0.04em -0.04em 0 #000,
+        -0.04em -0.04em 0 #000;
     }
 
     .step-falling div {
