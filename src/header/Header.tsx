@@ -19,7 +19,7 @@ export const Header = () => {
                 <img src={logo} alt="Logo" style={{ height: '100px' }} />
             </div>
             <div>
-                Účet a platby | Úvery | Platobné karty | Sporenie, investovanie a dôchodok | Poistenie | Životné momenty
+                Účet a platby | Úvery | Platobné karty | Sporenie, investovanie a dôchodok
             </div>
         </div>
     );

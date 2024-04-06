@@ -7,23 +7,19 @@ import wizard from './assets/wizard.png'
 function App() {
   return (
     <>
-      <Parallax pages={4}>
-
+      <Parallax pages={3} style={{top: '0', left: '0'}} className="animation">
           <ParallaxLayer
               offset={0}
-              factor={0.5}>
+              speed={0.25}
+              factor={3}>
               <Header></Header>
           </ParallaxLayer>
 
           <ParallaxLayer
-              offset={0.5}
-              factor={0.5}
-              speed={0.05}
-              style={{
-                  backgroundImage: `url(${wizard})`,
-                  height: '100%',
-              }}>
+              offset={0.5}>
+              <h2>ABCD</h2>
           </ParallaxLayer>
+
       </Parallax>
     </>
   )
