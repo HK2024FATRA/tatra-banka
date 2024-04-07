@@ -9,6 +9,7 @@ jobs:
         uses: actions/checkout@v4
   Install:
     runs-on: [self-hosted, linux]
+    steps:
       - name: Initialize Node.js
         uses: actions/setup-node@v4
         with:
@@ -17,11 +18,13 @@ jobs:
         run: npm ci
   Lint:
     runs-on: [self-hosted, linux]
+    steps:
       - name: Lint using ESLint
         continue-on-error: true
         run: npm run lint
   Build:
     runs-on: [self-hosted, linux]
+    steps:
       - name: Build with default script
         run: npm run build --if-present
         continue-on-error: true
