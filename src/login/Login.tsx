@@ -19,7 +19,7 @@ export function Login() {
 
     if (isAuthenticated) {
         return <>
-            <div className="login-head">
+            <div style={{marginLeft: '10px'}}>
                 <Avatar alt="Remy Sharp" src={user?.picture} />
             </div>
         </>
