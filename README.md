@@ -2,13 +2,14 @@
 
 GitHub repository of FatraBOT created by Fatra Banka ! Feel free to take a look !
 
-Deployed at: [fatrabot.co](fatra-bot.co)
+Deployed at: [fatrabot.co](https://fatra-bot.co)  
+
 Created by:  
 
- - Renáta Sulyoková
- - Daniela Mitníková
- - Samuel Molčan
- - Tomáš Kormaník
+ - 🇸🇰 Renáta Sulyoková
+ - 🇸🇰 Daniela Mitníková
+ - 🇸🇰 Samuel Molčan
+ - 🇸🇰 Tomáš Kormaník
 
 ## Generated setup configuration
 
