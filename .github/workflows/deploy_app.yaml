@@ -26,6 +26,8 @@ jobs:
   deploy:
     name: Deploy on GitHub pages
     needs: build
+    runs-on: [self-hosted, linux]
+    steps:
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
