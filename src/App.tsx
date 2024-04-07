@@ -152,7 +152,7 @@ function App() {
               </div>
           </ParallaxLayer>
 
-          <ParallaxLayer offset={12}>
+          <ParallaxLayer offset={10.5}>
               <Footer></Footer>
           </ParallaxLayer>
       </Parallax>
