@@ -1,4 +1,18 @@
-# React + TypeScript + Vite
+# FatraBOT
+
+GitHub repository of FatraBOT created by Fatra Banka ! Feel free to take a look !
+
+Deployed at: [fatrabot.co](fatra-bot.co)
+Created by:  
+
+ - Renáta Sulyoková
+ - Daniela Mitníková
+ - Samuel Molčan
+ - Tomáš Kormaník
+
+## Generated setup configuration
+
+Some gibberish to make this project run:  
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
