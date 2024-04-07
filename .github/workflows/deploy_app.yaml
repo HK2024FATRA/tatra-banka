@@ -25,6 +25,7 @@ jobs:
     needs: build
     permissions:
       id-token: write
+      pages: write
     runs-on: [self-hosted, linux]
     steps:
       - name: Setup Pages
