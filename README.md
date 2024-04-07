@@ -2,7 +2,7 @@
 
 GitHub repository of FatraBOT created by Fatra Banka ! Feel free to take a look !
 
-Deployed at: [fatrabot.co](https://fatra-bot.co)  
+Deployed at: [fatrabot.co](https://www.fatra-bot.co)  
 
 Created by:  
 
