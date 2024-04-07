@@ -102,12 +102,14 @@ h2 {
 
     .step {
         flex-direction: column; /* Stack flex items vertically */
+        margin: 10px;
     }
 
 
     .step p {
         color: #b3b3b3;
         font-family: cubano, sans-serif;
+        text-align: center;
         font-size: 5vw;
         text-shadow: -0.04em 0.04em 0 #000,
         0.04em 0.04em 0 #000,
