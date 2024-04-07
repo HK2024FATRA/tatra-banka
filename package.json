@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite --port 3000",
     "build": "tsc && vite build",
-    "gh-build": "tsc && vite build --base https://hk2024fatra.github.io/tatra-banka/",
+    "gh-build": "tsc && vite build --base=www.fatra-bot.co",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
