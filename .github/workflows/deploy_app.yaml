@@ -1,6 +1,6 @@
-name: 🔧 Build & Test npm
-run-name: Push by ${{ github.actor }} has triggered run with ID - ${{ github.run_id}} !
-on: [push]
+name: 🔧 Deploy application to GitHub Pages
+run-name: Triggered by ${{ github.actor }} with ID - ${{ github.run_id }} !
+on: [workflow_dispatch]
 jobs:
   build:
     runs-on: [self-hosted, linux]
