@@ -8,6 +8,8 @@ import wizardPointing from './assets/wizard_pointing.png';
 import wizardWatch from './assets/wizard_watch.png';
 import logo from './assets/tb-logo.png';
 import React from 'react';
+import {InfoForm} from './info-form/InfoForm.tsx';
+import {Login} from './login/Login.tsx';
 
 function App() {
     const headerStyle = {
@@ -21,7 +23,7 @@ function App() {
 
   return (
     <>
-      <Parallax pages={20} style={{top: '0', left: '0'}} className="animation">
+      <Parallax pages={11} style={{top: '0', left: '0'}}>
 
           <ParallaxLayer
               offset={0}
@@ -31,7 +33,12 @@ function App() {
                   <div>
                       <img src={logo} alt="Logo" style={{height: '100px'}}/>
                   </div>
-                  <div>
+
+                  <div style={headerStyle}>
+                      <a href="#formId">
+                          <button className="tb-button">Začni investovať</button>
+                      </a>
+                      <Login></Login>
                   </div>
               </div>
           </ParallaxLayer>
@@ -125,6 +132,12 @@ function App() {
                       </p>
                   </div>
                   <img src={wizardWatch} alt={'wizzard watch'}/>
+              </div>
+          </ParallaxLayer>
+
+          <ParallaxLayer offset={9.5}>
+              <div id="formId">
+                  <InfoForm></InfoForm>
               </div>
           </ParallaxLayer>
       </Parallax>

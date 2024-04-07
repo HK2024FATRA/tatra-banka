@@ -13,6 +13,20 @@ h2 {
     -0.04em -0.04em 0 #000;
 }
 
+.tb-button {
+    background-color: #0097fd;
+    height: 30px;
+    border-radius: 3px;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    display: inline-block;
+    line-height: 30px;
+    cursor: pointer;
+    white-space: nowrap;
+    font-weight: 400;
+}
+
 
 .step {
     display: flex;
