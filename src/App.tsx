@@ -27,7 +27,7 @@ function App() {
 
   return (
     <>
-      <Parallax pages={11} style={{top: '0', left: '0'}}>
+      <Parallax pages={13} style={{top: '0', left: '0'}}>
 
           <ParallaxLayer
               offset={0}
@@ -143,8 +143,16 @@ function App() {
               </div>
           </ParallaxLayer>
 
+          <ParallaxLayer
+              speed={0.1}
+              offset={9.5}>
+              <div className="step">
+                  <img src={wizard} alt={'wizzard'}/>
+                  <h2>Neváhaj a kontaktuj nášho pracovníka pre vypracovanie <a className="link-h">investičného plánu</a></h2>
+              </div>
+          </ParallaxLayer>
 
-          <ParallaxLayer offset={10.5}>
+          <ParallaxLayer offset={12}>
               <Footer></Footer>
           </ParallaxLayer>
       </Parallax>
