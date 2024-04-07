@@ -10,8 +10,11 @@ import logo from './assets/tb-logo.png';
 import React from 'react';
 import {InfoForm} from './info-form/InfoForm.tsx';
 import {Login} from './login/Login.tsx';
+import {useAuth0} from '@auth0/auth0-react';
 
 function App() {
+    const { isAuthenticated} = useAuth0();
+
     const headerStyle = {
         backgroundColor: '#000', // black background
         color: '#fff', // white text
@@ -35,9 +38,13 @@ function App() {
                   </div>
 
                   <div style={headerStyle}>
-                      <a href="#formId">
-                          <button className="tb-button">Začni investovať</button>
-                      </a>
+                      {
+                          isAuthenticated && (
+                              <a href="#formId">
+                                  <button className="tb-button">Začni investovať</button>
+                              </a>
+                          )
+                      }
                       <Login></Login>
                   </div>
               </div>
