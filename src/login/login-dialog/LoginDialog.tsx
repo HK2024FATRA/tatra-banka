@@ -11,7 +11,7 @@ import {
 } from '@mui/material';
 import {blue} from '@mui/material/colors';
 import {useAuth0} from '@auth0/auth0-react';
-
+import './LoginDialog.css';
 
 
 export interface SimpleDialogProps {
@@ -43,10 +43,21 @@ export function LoginDialog(props: SimpleDialogProps) {
 
     return (
         <Dialog onClose={handleClose} open={open} fullWidth>
-            <DialogTitle>Účet</DialogTitle>
-            <Avatar alt="Remy Sharp" src={user?.picture} />
-            {user?.name}
-            <button onClick={() => logoutWithRedirect()}>Odhlásiť sa</button>
+            <DialogTitle>Prihlásený používateľ</DialogTitle>
+            <div style={{
+                display: 'flex',
+                flexDirection: 'row',
+                alignItems: 'center',
+                justifyContent: 'left',
+                marginBottom: '20px'
+            }}>
+                <Avatar alt="Remy Sharp" src={user?.picture} style={{margin: '10px'}}/>
+                <div><h3>{user?.name}</h3></div>
+            </div>
+
+            <div style={{display: 'flex', justifyContent: 'center', margin: '20px'}}>
+                <button className="tb-button" onClick={() => logoutWithRedirect()}>Odhlásiť sa</button>
+            </div>
 
             {/*<Button></Button>*/}
             {/*<ListItem disableGutters key={user?.name}>*/}
