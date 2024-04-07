@@ -41,7 +41,7 @@ function App() {
                   <div style={headerStyle}>
                       {
                           isAuthenticated && (
-                              <a href="#formId">
+                              <a>
                                   <button className="tb-button">Začni investovať</button>
                               </a>
                           )
@@ -136,7 +136,7 @@ function App() {
                   <div>
                       <h2>Kedy začať investovať?</h2>
                       <p className="left-align">
-                          Hneď. Už včera bolo neskoro. Čím skôr, tým lepšie. Nechaj svoje peniaze pracovať.
+                          Hneď. Už včera bolo neskoro. Čím skôr, tým lepšie. Nechaj svoje peniaze <b>pracovať</b>.
                       </p>
                   </div>
                   <img src={wizardWatch} alt={'wizzard watch'}/>
