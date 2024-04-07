@@ -11,6 +11,7 @@ import React from 'react';
 import {InfoForm} from './info-form/InfoForm.tsx';
 import {Login} from './login/Login.tsx';
 import {useAuth0} from '@auth0/auth0-react';
+import {Footer} from './footer/Footer.tsx';
 
 function App() {
     const { isAuthenticated} = useAuth0();
@@ -142,10 +143,9 @@ function App() {
               </div>
           </ParallaxLayer>
 
-          <ParallaxLayer offset={9.5}>
-              <div id="formId">
-                  <InfoForm></InfoForm>
-              </div>
+
+          <ParallaxLayer offset={10.5}>
+              <Footer></Footer>
           </ParallaxLayer>
       </Parallax>
     </>
