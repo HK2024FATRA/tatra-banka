@@ -11,6 +11,16 @@ Created by:
  - 🇸🇰 Samuel Molčan
  - 🇸🇰 Tomáš Kormaník
 
+Used technologies, tools and providers:  
+
+ - React
+ - NPM
+ - GitHub Actions
+ - MongoDB Atlas
+ - Auth0
+ - PorkBun | GoDaddy
+ - Adobe Firefly
+
 ## Generated setup configuration
 
 Some gibberish to make this project run:  
