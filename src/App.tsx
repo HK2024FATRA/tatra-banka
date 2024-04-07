@@ -41,9 +41,7 @@ function App() {
                   <div style={headerStyle}>
                       {
                           isAuthenticated && (
-                              <a>
                                   <button className="tb-button">Začni investovať</button>
-                              </a>
                           )
                       }
                       <Login></Login>
@@ -122,7 +120,7 @@ function App() {
                   <img src={wizardPointing} alt={'wizzard'}/>
                   <div>
                       <h2>Ako investovať?</h2>
-                      <p className="left-align">
+                      <p>
                           Pre <b>krátkodobé investičné horizonty</b> (do 5 rokov) je vhodné pristupovať <b>konzervatívnejšie</b>, čo <b>znižuje riziko straty, ale aj potenciálne výnosy</b>. <br/> <br/>
                           Naopak, pri <b>dlhodobom investovaní</b> je možné zvoliť <b>agresívnejšie stratégie</b>, ktoré prinášajú <b>vyšší potenciál</b> rastu hodnoty investície, aj keď musíš počítať s <b>možnými kratkodobými výkyvmi</b>.</p>
                   </div>
@@ -135,7 +133,7 @@ function App() {
               <div className="step" id="when">
                   <div>
                       <h2>Kedy začať investovať?</h2>
-                      <p className="left-align">
+                      <p>
                           Hneď. Už včera bolo neskoro. Čím skôr, tým lepšie. Nechaj svoje peniaze <b>pracovať</b>.
                       </p>
                   </div>
